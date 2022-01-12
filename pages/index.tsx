@@ -1,9 +1,18 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css';
+import { getMatchPrograms } from '../lib/graphcms';
 
-const Home: NextPage = () => {
+
+
+
+const Home: NextPage = ({...program}) => {
+
+  console.log(program.program)
+ 
+ 
+
   return (
     <div className={styles.container}>
       <Head>
@@ -69,4 +78,13 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export const getStaticProps: GetStaticProps = async () => {
+  const program = await getMatchPrograms();
+  return {
+      props: { program },
+      revalidate: 60,
+  };
+};
+
+
+export default Home;

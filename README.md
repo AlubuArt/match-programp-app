@@ -9,6 +9,10 @@ The app displays the next upcoming matches, and matches allready held.
 - Upcoming matches
 - Completed matches
 
+MatchProgram: 
+- Matches: Match[]
+- Round: number
+
 Matches:
 - HomeTeam: string
 - AwayTeam: string
@@ -33,11 +37,11 @@ Matches:
 
 - [x] Setup environment (1) - (0.5)
 - [X] Graph CMS schema (.5) - (0.5)
-- [ ] Modelling types in TypeScript (1)
+- [x] Modelling types in TypeScript (1) - (0.5)
 - [ ] Simpel Mockups of UI (.5)
 - [ ] UI Design in Figma (2)
 - [ ] Implementing UI with TypeScript/nextjs and Tailwind CSS (3)
-- [ ] Calls to GraphCMS (1)
+- [x] Calls to GraphCMS (1) - 
 - [ ] Setting up user and permission in GraphCMS (1)
 - [ ] Writing tests (2)
 - [ ] Writing documentation (2)
