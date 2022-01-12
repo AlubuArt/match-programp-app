@@ -13,11 +13,12 @@ Matches:
 - HomeTeam: string
 - AwayTeam: string
 - LeagueName: string
-- Match Date: Date ISO 8601
-- Match Time: Time | string
-- HomeTeamCurrentPositionInLeague (optional): string
-- AwayTeamCurrentPositionInLeague (optional): string
-- Match score (if match is completed -optional): string
+- Match Date: Date ISO 8601 
+- Kickoff: Time | string 
+- HomeTeamCurrentPosition (optional): string
+- AwayTeamCurrentPosition (optional): string
+- HomeTeamScore: string
+- AwayTeam Score: string
 
 
 ## Tech Stack
@@ -30,8 +31,8 @@ Matches:
 
 ## Product Backlog (time estimate in parens)
 
-- [ ] Setup environment (1)
-- [ ] Graph CMS schema (.5)
+- [x] Setup environment (1) - (0.5)
+- [X] Graph CMS schema (.5) - (0.5)
 - [ ] Modelling types in TypeScript (1)
 - [ ] Simpel Mockups of UI (.5)
 - [ ] UI Design in Figma (2)
