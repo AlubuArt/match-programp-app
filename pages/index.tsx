@@ -7,9 +7,9 @@ import { getMatchPrograms } from '../lib/graphcms';
 
 
 
-const Home: NextPage = ({...program}) => {
+const Home: NextPage = (program: any) => {
 
-  console.log(program.program)
+  console.log(program.program.matchPrograms[0].matchesInProgram)
  
  
 

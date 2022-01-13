@@ -38,10 +38,10 @@ Matches:
 - [x] Setup environment (1) - (0.5)
 - [X] Graph CMS schema (.5) - (0.5)
 - [x] Modelling types in TypeScript (1) - (0.5)
-- [ ] Simpel Mockups of UI (.5)
+- [X] Simpel Mockups of UI (.5)
 - [ ] UI Design in Figma (2)
 - [ ] Implementing UI with TypeScript/nextjs and Tailwind CSS (3)
-- [x] Calls to GraphCMS (1) - 
+- [x] Calls to GraphCMS (1) - (2)
 - [ ] Setting up user and permission in GraphCMS (1)
 - [ ] Writing tests (2)
 - [ ] Writing documentation (2)
