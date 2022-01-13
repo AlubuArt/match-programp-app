@@ -9,16 +9,23 @@ interface ProgramLayoutProps {
 
 export const ProgramLayout: React.FC<ProgramLayoutProps> = ({matches}) => {
     return ( 
-        <>
-            <h2>Coming matches in round </h2>
-        {
+        <div className="container mx-auto" >
+            <div className="container w-4/5 bg-white mx-auto ">
+                <h1 >Match program for week</h1>
+            </div>
+            
+
+<h2>Home</h2>
+
+
+        {/* {
             matches.map((match, index) => {
                 return (
                 <MatchCard match={match} key={index}/> )
                 })
-        }
+        } */}
         
-        </>
+        </div>
     )
 }
 

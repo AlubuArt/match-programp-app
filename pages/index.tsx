@@ -7,14 +7,14 @@ import ProgramLayout from '../ui/components/Layouts/ProgramLayout/ProgramLayout'
 
 const Home: NextPage = (program: any) => {
 
-  console.log(program.program.matchesInProgram)
+  
  
  
 
   return (
-    <>
+    <div className="container mx-auto bg-sky-500/100" >
     <ProgramLayout matches={program.program.matchesInProgram} />
-    </>
+    </div>
 
   )
 }
