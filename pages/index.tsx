@@ -1,5 +1,6 @@
 import type { GetStaticProps, NextPage } from 'next'
 import { getMatchPrograms } from '../lib/graphcms';
+import ProgramLayout from '../ui/components/Layouts/ProgramLayout/ProgramLayout';
 
 
 
@@ -12,6 +13,7 @@ const Home: NextPage = (program: any) => {
 
   return (
     <>
+    <ProgramLayout matches={program.program.matchesInProgram} />
     </>
 
   )
