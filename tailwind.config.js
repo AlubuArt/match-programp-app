@@ -15,9 +15,9 @@ module.exports = {
         'white': '#FFFFFF',
       },
       backgroundImage: {
-        'body-image': "url('../images/body-image.jpeg')",
+        'body-image': "url('../public/images/body-image.jpeg')",
         'customGradient': "linear-gradient(to bottom, var(blue), var(dark-blue)",
-        'noise': "url('../images/Noise.png",
+        'noise': "url('../public/images/Noise.png",
         'card-gradient': "linear-gradient(to right, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.09) 100%)"
       },
     },
@@ -26,7 +26,5 @@ module.exports = {
 }
 
 
-
-/* Noise */
 
 
