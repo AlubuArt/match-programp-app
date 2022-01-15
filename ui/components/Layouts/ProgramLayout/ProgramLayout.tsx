@@ -1,32 +1,24 @@
-import React from 'react';
-import MatchCard from '../../MatchCard/MatchCard';
-
+import React from "react";
+import MatchCard from "../../MatchCard/MatchCard";
 
 interface ProgramLayoutProps {
-    matches: Array<Models.Match>
+    matches: Array<Models.Match>;
 }
 
-
-export const ProgramLayout: React.FC<ProgramLayoutProps> = ({matches}) => {
-    return ( 
-        <div className="container mx-auto" >
-            <div className="container w-4/5 bg-white mx-auto ">
-                <h1 >Match program for week</h1>
+export const ProgramLayout: React.FC<ProgramLayoutProps> = ({ matches }) => {
+    return (
+        <div className="container mx-auto">
+            <div className="container pt-10  w-4/5 mx-auto text-center font-sans text-white">
+                <h1 className="text-5xl font-bold">Match Day!</h1>
+                <h2 className="text-3xl font-medium"> Lørdag d. 13/3</h2>
             </div>
-            
-
-<h2>Home</h2>
-
-
-        {/* {
-            matches.map((match, index) => {
-                return (
-                <MatchCard match={match} key={index}/> )
-                })
-        } */}
-        
+            <div className="container py-20 w-3/5  mx-auto">
+                {matches.map((match, index) => {
+                    return <MatchCard match={match} key={index} />;
+                })}
+            </div>
         </div>
-    )
-}
+    );
+};
 
 export default ProgramLayout;

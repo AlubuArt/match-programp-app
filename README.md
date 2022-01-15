@@ -32,6 +32,10 @@ Matches:
 - TypeScript
 
 
+## Resources
+- [Figma design](https://www.figma.com/file/CkO0rXcCreKeu1Btwf439o/match_program_app?node-id=0%3A1) 
+
+- [Github](https://github.com/AlubuArt/match-programp-app)
 
 ## Product Backlog (time estimate in parens)
 
@@ -39,7 +43,7 @@ Matches:
 - [X] Graph CMS schema (.5) - (0.5)
 - [x] Modelling types in TypeScript (1) - (0.5)
 - [X] Simpel Mockups of UI (.5)
-- [ ] UI Design in Figma (2)
+- [X] UI Design in Figma (2)
 - [ ] Implementing UI with TypeScript/nextjs and Tailwind CSS (3)
 - [x] Calls to GraphCMS (1) - (2)
 - [ ] Setting up user and permission in GraphCMS (1)
