@@ -2,11 +2,13 @@ module.exports = {
   content: ["./pages/**/*.{js,ts,jsx,tsx}",
   "./ui/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontFamily: {
+      'header': ['Montserrat', 'Arial', 'sans-serif'],
+      'match-info': 'Arial'
+      
+    },
     extend: {
-      fontFamily: {
-        'sans': ['Montserrat', 'Arial', 'sans-serif'],
-        
-      },
+      
       colors: {
         'blue': '#0048A4',
         'dark-blue': '#00132C',
@@ -14,10 +16,17 @@ module.exports = {
       },
       backgroundImage: {
         'body-image': "url('../images/body-image.jpeg')",
-        'customGradient': "linear-gradient(to bottom, var(blue), var(dark-blue)"
+        'customGradient': "linear-gradient(to bottom, var(blue), var(dark-blue)",
+        'noise': "url('../images/Noise.png",
+        'card-gradient': "linear-gradient(to right, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.09) 100%)"
       },
     },
   },
   plugins: [],
 }
+
+
+
+/* Noise */
+
 

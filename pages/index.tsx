@@ -4,8 +4,8 @@ import ProgramLayout from "../ui/components/Layouts/ProgramLayout/ProgramLayout"
 
 const Home: NextPage = (program: any) => {
     return (
-        <div className="container mx-auto bg-body-image">
-          <div className="container mx-auto bg-gradient-to-b from-blue to-dark-blue opacity-95">
+        <div className="container mx-auto bg-body-image min-h-screen">
+          <div className="container mx-auto bg-gradient-to-b from-blue to-dark-blue opacity-95 min-h-screen">
             <ProgramLayout matches={program.program.matchesInProgram} />
           </div>
         </div>

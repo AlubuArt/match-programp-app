@@ -1,31 +1,35 @@
-import react from 'react';
+import react from "react";
 
 interface MatchCardProps {
     match: Models.Match;
 }
 
-
-const MatchCard: React.FC<MatchCardProps> = ({match}) => {
+const MatchCard: React.FC<MatchCardProps> = ({ match }) => {
     return (
-        <div className="container mb-20 text-center bg-slate-600 font-sans text-white">
-            <div className="container text-center p-2">
-                <h3 className="text-1xl">{match.leagueName}</h3>
-            </div>
-            <div className="flex flex-row ">
-                <div className="container basis-3/7 p-2">
-                    <h3 className="text-2xl font-bold">{match.homeTeam}</h3>
+        <div className="container mb-10 px-3 font-header italic bg-noise text-white ">
+            <div className="container bg-card-gradient border box-border border-white border-solid rounded-xl">
+                <div className="p-2">
+                    <div className="text-left">
+                        <h2 className="text-2xl">{match.homeTeam}</h2>
+                    </div>
+                    <div className="text-center">
+                        <p>vs</p>
+                    </div>
+                    <div className="text-right">
+                    <h2 className="text-2xl">{match.awayTeam}</h2>
+                    </div>
                 </div>
-                <div className="container basis-1/6 text-center p-2 "> - </div>
-                <div className="container basis-3/7 text-center p-2">
-                    <h3 className="text-2xl font-bold">{match.awayTeam}</h3>
-                </div>
-            </div>
-            <div>
-                <h3>Kickoff: {match.kickoff}</h3>
-            </div>
-        </div>
 
-    )
-}
+                
+            </div>
+            <div  className="flex font-match-info">
+                    <p className="basis-6/12 text-left">{match.leagueName}</p>
+                    <p className="basis-6/12 text-center">{match.matchDate}</p>
+                    <p className="basis-6/12 text-right">Kickoff: {match.kickoff}</p>
+                
+                </div>
+        </div>
+    );
+};
 
 export default MatchCard;
