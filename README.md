@@ -42,15 +42,16 @@ Matches:
 - [x] Setup environment (1) - (0.5)
 - [X] Graph CMS schema (.5) - (0.5)
 - [x] Modelling types in TypeScript (1) - (0.5)
-- [X] Simpel Mockups of UI (.5)
+- [X] Simpel Mockups of UI (.5) - (.5)
 - [X] UI Design in Figma (2) - (2)
-- [ ] Implementing UI with TypeScript/nextjs and Tailwind CSS (3) 
+- [x] Implementing UI with TypeScript/nextjs and Tailwind CSS (3) 
 - [x] Calls to GraphCMS (1) - (2)
+- [ ] make UI responsive (2)
 - [ ] Setting up user and permission in GraphCMS (1)
 - [ ] Writing tests (2)
 - [ ] Writing documentation (2)
 
 
-Total estimate: 15 hours
+Total estimate: 17 hours
 
-Actual time used: ???
+Actual time used: 9
