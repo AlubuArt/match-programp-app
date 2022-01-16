@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'header': ['Montserrat', 'Arial', 'sans-serif'],
-      'match-info': 'Arial'
+      'match-info': 'Cabin'
       
     },
     extend: {

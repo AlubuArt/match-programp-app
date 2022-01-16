@@ -4,6 +4,9 @@ import Footer from "../ui/components/Footer/Footer";
 import ProgramLayout from "../ui/components/Layouts/ProgramLayout/ProgramLayout";
 
 const Home: NextPage = (program: any) => {
+
+
+  
     return (
         <div className="mx-auto bg-body-image min-h-screen ">
           <div className=" mx-auto bg-gradient-to-b from-dark-blue to-blue opacity-95 min-h-screen">

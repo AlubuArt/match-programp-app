@@ -22,10 +22,10 @@ const MatchCard: React.FC<MatchCardProps> = ({ match }) => {
 
                 
             </div>
-            <div  className="flex font-match-info">
+            <div  className="flex font-match-info text-sm">
                     <p className="basis-6/12 text-left">{match.leagueName}</p>
-                    <p className="basis-6/12 text-center">{match.matchDate}</p>
-                    <p className="basis-6/12 text-right">Kickoff: {match.kickoff}</p>
+                    <p className="basis-6/12 text-center">{new Date(match.dateAndTime).toLocaleDateString()}</p>
+                    <p className="basis-6/12 text-right ">Kickoff: {new Date(match.dateAndTime).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</p>
                 
                 </div>
         </div>
