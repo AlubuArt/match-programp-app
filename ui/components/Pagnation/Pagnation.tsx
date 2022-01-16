@@ -30,7 +30,7 @@ const Pagnation: React.FC<PagnationProps> = ({
 
     }
     return (
-        <div className="container  text-white text-center mx-auto">
+        <div className="container text-xs text-white text-center mx-auto">
             <button className="pr-5 pl-5" onClick={handleBackClick}>
                 {"<- Frem"}
             </button>
