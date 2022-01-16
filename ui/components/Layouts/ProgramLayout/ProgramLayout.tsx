@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../Footer/Footer";
 import Header from '../../Header/Header'
 import MatchCard from "../../MatchCard/MatchCard";
 
@@ -16,6 +17,7 @@ export const ProgramLayout: React.FC<ProgramLayoutProps> = ({ matches }) => {
                     return <MatchCard match={match} key={index} />;
                 })}
             </div>
+            <Footer text={"Lavet med ❤️   for lokal amatør fodbold"} />
         </div>
     );
 };

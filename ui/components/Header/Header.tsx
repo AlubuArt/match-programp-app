@@ -4,7 +4,7 @@ import React from 'react';
 const Header: React.FC = () => {
 
     return (
-        <div className="container pt-10  w-5/5 mx-auto text-white">
+        <div className="container pt-5  w-5/5 mx-auto text-white">
                 <div className="text-center ">
                     <h1 className="text-6xl font-black font-header italic">KAMPDAG!</h1>
                 </div>
