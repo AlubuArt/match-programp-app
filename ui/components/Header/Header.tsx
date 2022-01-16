@@ -8,7 +8,7 @@ const Header: React.FC = () => {
                 <div className="text-center ">
                     <h1 className="text-6xl font-black font-header italic">KAMPDAG!</h1>
                 </div>
-                <div className="text-right pr-5 pl-5">
+                <div className="text-right sm:text-center pr-5 pl-5">
                     <h2 className="text-1xl font-bold italic">
                         Welcome to Hell!
                     </h2>
