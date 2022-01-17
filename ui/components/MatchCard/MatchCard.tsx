@@ -7,7 +7,7 @@ interface MatchCardProps {
 const MatchCard: React.FC<MatchCardProps> = ({ match }) => {
     return (
         <div className="container mb-10 px-3 font-header italic bg-noise text-white ">
-            <div className="container bg-card-gradient border box-border border-white border-solid rounded-xl">
+            <div className="container bg-card-gradient border box-border border-white/25 border-solid rounded-xl">
                 <div className="p-2">
                     <div className="text-left">
                         <h2 className="text-2xl">{match.homeTeam}</h2>

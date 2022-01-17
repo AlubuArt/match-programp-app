@@ -1,4 +1,4 @@
-import type { GetStaticProps, NextPage } from "next";
+import type { GetServerSideProps, GetStaticProps, NextPage } from "next";
 import { useState } from "react";
 import { getMatchPrograms } from "../lib/graphcms";
 import Footer from "../ui/components/Footer/Footer";
@@ -29,12 +29,11 @@ const Home: NextPage = (program: any) => {
     );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
     const program = await getMatchPrograms();
 
     return {
-        props: { program },
-        revalidate: 60,
+        props: { program }
     };
 };
 
