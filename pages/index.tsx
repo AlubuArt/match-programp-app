@@ -1,4 +1,4 @@
-import type { GetServerSideProps, GetStaticProps, NextPage } from "next";
+import type { GetServerSideProps,  NextPage } from "next";
 import { useEffect, useState } from "react";
 import { getMatchPrograms } from "../lib/graphcms";
 import Footer from "../ui/components/Footer/Footer";
@@ -25,6 +25,7 @@ const Home: NextPage = (program: any) => {
                         program.program.matchPrograms[selectedRound]
                             .matchesInProgram
                     }
+                    sponsor={""}
                     
                 />
         {/*     <Pagnation list={program.program.matchPrograms} selectedRound={selectedRound} setSelectedRound={setSelectedRound}/> */}

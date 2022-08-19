@@ -16,4 +16,9 @@ declare namespace Models {
         matches: Array<Match>;
         round: number;
     }
+
+    export interface SponsorLogo {
+        url: string; 
+
+    }
 }

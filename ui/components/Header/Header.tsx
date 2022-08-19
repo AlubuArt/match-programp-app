@@ -10,7 +10,7 @@ const Header: React.FC = () => {
                 </div>
                 <div className="text-right sm:text-center pr-5 pl-5">
                     <h2 className="text-1xl font-bold italic">
-                        Welcome to Hell!
+                        Sponsoreret af...
                     </h2>
                 </div>
             </div>
