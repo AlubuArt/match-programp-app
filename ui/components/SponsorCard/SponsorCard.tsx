@@ -6,11 +6,11 @@ interface SponsorCardProps {
 	logo: string;
 }
 
-const SponsorCard: React.FC<SponsorCardProps> = ({}) => {
+const SponsorCard: React.FC<SponsorCardProps> = ({logo}) => {
 	return (
-		<div className='container mx-auto p-2 bg-white w-5/5 '>
+		<div className='container  mx-auto p-2 bg-white w-4/5 '>
 			
-			<Image alt={""} src={Logo} /> 
+			<Image alt={""} src={logo} height={30} width={100}layout={"responsive"}/> 
 		</div>
 	);
 };

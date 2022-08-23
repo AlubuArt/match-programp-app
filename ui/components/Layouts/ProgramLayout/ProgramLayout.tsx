@@ -7,16 +7,20 @@ import SponsorCard from "../../SponsorCard/SponsorCard";
 
 interface ProgramLayoutProps {
     matches: Array<Models.Match>;
-    sponsor: Models.SponsorLogo["url"];
+    sponsorLogo: Models.SponsorLogo["url"];
 }
 
-export const ProgramLayout: React.FC<ProgramLayoutProps> = ({ matches }) => {
+
+
+export const ProgramLayout: React.FC<ProgramLayoutProps> = ({ matches, sponsorLogo }) => {
+
+    
     return (
         <div className="container mx-auto md:w-1/2 lg:w-2/5 xl:w-2/5 2xl:w-1/4">
             
             <div className="container mx-auto">
                 <div className="container pb-5 pt-2 px-10">
-                    <SponsorCard logo={""}/>
+                    <SponsorCard logo={sponsorLogo}/>
                 </div>
                 
                 {matches.map((match, index) => {
