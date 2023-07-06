@@ -10,11 +10,8 @@ interface ProgramLayoutProps {
     sponsorLogo: Models.SponsorLogo["url"];
 }
 
+const ProgramLayout: React.FC<ProgramLayoutProps> = ({ matches, sponsorLogo }) => {
 
-
-export const ProgramLayout: React.FC<ProgramLayoutProps> = ({ matches, sponsorLogo }) => {
-
-    
     return (
         <div className="container mx-auto md:w-1/2 lg:w-2/5 xl:w-2/5 2xl:w-1/4">
             

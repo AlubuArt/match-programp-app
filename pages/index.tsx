@@ -16,9 +16,6 @@ const Home: NextPage = (program: any, sponsorLogo: string) => {
        
     }, [])
 
-    console.log("test",  sponsorLogo)
-    console.log(program.sponsorLogo)
-
     return (
         <div className="mx-auto bg-body-image min-h-screen relative">
             <div className=" mx-auto bg-gradient-to-b from-dark-blue to-blue opacity-95 min-h-screen ">
