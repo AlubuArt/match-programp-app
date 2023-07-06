@@ -13,7 +13,6 @@ const Home: NextPage = (program: any, sponsorLogo: string) => {
 
     useEffect(() => {
         TagManager.initialize({ gtmId: 'GTM-WF57VTL' });
-       
     }, [])
 
     return (
